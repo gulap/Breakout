@@ -2,6 +2,7 @@
  * Created by Tommy on 22.10.2017.
  */
 
+
 import javafx.application.*;
 import javafx.event.EventHandler;
 import javafx.scene.effect.DropShadow;
@@ -20,6 +21,7 @@ import javafx.scene.input.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
+
 public class Breakout extends Application {
 
 
@@ -28,7 +30,7 @@ public class Breakout extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         Group root = new Group();
-        Scene scene = new Scene(root, 640, 480);
+        Scene scene = new Scene(root, 300, 240);
 
         //Hintergrund
         Image bgPic = new Image("BG_temp.jpg");
@@ -63,8 +65,9 @@ public class Breakout extends Application {
         Rectangle brick = new Rectangle();
         brick.setWidth(60);
         brick.setHeight(20);
-        brick.setArcWidth(10d);
+/*        brick.setArcWidth(10d);
         brick.setArcHeight(10d);
+*/
         brick.setFill(Color.GREY);
         brick.setLayoutX((brick.getWidth() / 2) - brick.getWidth());
         brick.setLayoutY((brick.getHeight() / 2) - brick.getHeight());
